@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estuda ENEM | Login demonstrativo</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <img class="logo-topo" src="../Imagens/Logo%20enem.png" alt="Logo do ENEM">
+    <h1>Acesso ao Estuda ENEM</h1>
+    <p>Formulário demonstrativo de perfil.</p>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="linguagens.html">Linguagens</a></li>
+        <li><a href="humanas.html">Ciências Humanas</a></li>
+        <li><a href="natureza.html">Ciências da Natureza</a></li>
+        <li><a href="matematica.html">Matemática</a></li>
+        <li><a href="redacao.html">Redação</a></li>
+        <li><a href="login.html" aria-current="page">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="formulario">
+      <h2 id="formulario">Login</h2>
+      <p>Coloque seus dados para acessar sua conta.</p>
+      <form>
+        <p>
+          <label for="nome">Nome Completo:</label><br>
+          <input id="nome" name="nome" type="text" autocomplete="name" required>
+        </p>
+        <p>
+          <label for="local">Cidade e estado onde mora:</label><br>
+          <input id="local" name="local" type="text" placeholder="Ex.: Recife, PE" autocomplete="address-level2">
+        </p>
+        <p>
+          <label for="situacao-financeira">Situação financeira (opcional):</label><br>
+          <select id="situacao-financeira" name="situacao-financeira">
+            <option value="">Prefiro não informar</option>
+            <option value="baixa-renda">Renda familiar baixa</option>
+            <option value="media-renda">Renda familiar média</option>
+            <option value="alta-renda">Renda familiar alta</option>
+          </select>
+        </p>
+        <p>
+          <label for="escolaridade">Escolaridade:</label><br>
+          <select id="escolaridade" name="escolaridade" required>
+            <option value="">Selecione</option>
+            <option value="fundamental">Ensino Fundamental</option>
+            <option value="medio-incompleto">Ensino Médio incompleto</option>
+            <option value="medio-completo">Ensino Médio completo</option>
+            <option value="superior-incompleto">Ensino Superior incompleto</option>
+            <option value="superior-completo">Ensino Superior completo</option>
+            <option value="pos-graduacao">Pós-graduação</option>
+          </select>
+        </p>
+        <p>
+          <label for="senha">CPF:</label><br>
+          <input id="senha" name="senha" type="password" autocomplete="new-password" required>
+        </p>
+        <p>
+          <button type="submit">Entrar</button>
+          <button type="reset">Limpar formulário</button>
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Estuda ENEM — material de apoio para seus estudos.</p>
+    <p>Site feito por: Davi Cavalcanti</p>
+  </footer>
+</body>
+</html>

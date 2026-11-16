@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estuda ENEM | Início</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <img class="logo-topo" src="../Imagens/Logo%20enem.png" alt="Logo do ENEM">
+    <h1>Estuda ENEM</h1>
+    <p>Um espaço simples para organizar sua preparação para o Exame Nacional do Ensino Médio.</p>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="linguagens.html">Linguagens</a></li>
+        <li><a href="humanas.html">Ciências Humanas</a></li>
+        <li><a href="natureza.html">Ciências da Natureza</a></li>
+        <li><a href="matematica.html">Matemática</a></li>
+        <li><a href="redacao.html">Redação</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img class="logo-inicio" src="../Imagens/Logo%20enem.png" alt="Logotipo do Exame Nacional do Ensino Médio">
+    <section aria-labelledby="boas-vindas">
+      <h2 id="boas-vindas">Sua jornada começa aqui</h2>
+      <article>
+        <h3>Estude com estratégia</h3>
+        <p>O ENEM avalia conhecimentos e a capacidade de relacioná-los a situações do cotidiano. Explore as áreas de estudo e mantenha uma rotina possível.</p>
+        <p><mark>Dica:</mark> intercale teoria, resolução de questões e revisão dos assuntos que mais exigem atenção.</p>
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='Imagens\Logo enem.png' width='640' height='240' viewBox='0 0 640 240'%3E%3Crect width='640' height='240' fill='%23e8f2ed'/%3E%3Cpath d='M0 190 Q160 130 320 190 T640 170 V240 H0Z' fill='%2399c7aa'/%3E%3Cpath d='M230 158V82h180v76M260 82V55h120v27M280 110h24v30h-24zm55 0h24v30h-24z' fill='none' stroke='%232c5c45' stroke-width='8'/%3E%3Ctext x='320' y='215' text-anchor='middle' font-family='sans-serif' font-size='20' fill='%232c5c45'%3EEstudar abre caminhos%3C/text%3E%3C/svg%3E" alt="Ilustração de uma casa entre colinas com a frase Estudar abre caminhos">
+          <figcaption>Pequenos passos consistentes ajudam a construir uma boa preparação.</figcaption>
+        </figure>
+      </article>
+      <aside>
+        <h3>Conheça a prova</h3>
+        <p><abbr title="Exame Nacional do Ensino Médio">ENEM</abbr> é aplicado em dois dias e reúne questões objetivas e uma redação.</p>
+        <blockquote>
+          <p>“A educação não transforma o mundo. Educação muda as pessoas. Pessoas transformam o mundo.”</p>
+          <footer>— Paulo Freire</footer>
+        </blockquote>
+      </aside>
+    </section>
+
+    <section aria-labelledby="midias">
+      <h2 id="midias">Conteúdos para revisar</h2>
+      <article>
+        <h3>Música</h3>
+        <p>Use o reprodutor para escutar uma música relaxante enquanto estuda.</p>
+        <audio controls>
+          <source src="../Musicas/relaxante.mp3" type="audio/mpeg">
+        </audio>
+      </article>
+      <article>
+        <h3>Aula em vídeo</h3>
+        <p>Assista à aula de revisão no YouTube.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wJKhpRUyVZM?si=Wad_ndnOTEyNZ8QN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </article>
+    </section>
+
+    <section aria-labelledby="plano">
+      <h2 id="plano">Monte seu plano de estudos</h2>
+      <form action="#" method="get">
+        <p>
+          <label for="nome">Seu nome:</label>
+          <input id="nome" name="nome" type="text" placeholder="Ex.: Ana Silva" required>
+        </p>
+        <p>
+          <label for="email">E-mail:</label>
+          <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+        </p>
+        <p>
+          <label for="data-prova">Data prevista da prova:</label>
+          <input id="data-prova" name="data-prova" type="date" required>
+        </p>
+        <p>
+          <label for="area">Área que quer priorizar:</label>
+          <input id="area" name="area" list="areas" placeholder="Escolha ou digite uma área" required>
+          <datalist id="areas">
+            <option value="Linguagens">
+            <option value="Ciências Humanas">
+            <option value="Ciências da Natureza">
+            <option value="Matemática">
+            <option value="Redação">
+          </datalist>
+        </p>
+        <p>
+          <label for="cor">Cor para identificar suas anotações:</label>
+          <input id="cor" name="cor" type="color" value="#2c5c45">
+        </p>
+        <p>
+          <label for="material">Anexe um material de estudo:</label>
+          <input id="material" name="material" type="file">
+        </p>
+        <button type="submit">Salvar plano</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="andamento">
+      <h2 id="andamento">Acompanhe seu progresso</h2>
+      <p>Exemplo de meta semanal: <progress value="3" max="5">3 de 5 sessões</progress> 3 de 5 sessões concluídas.</p>
+      <p>Confiança em redação: <meter min="0" max="10" value="6">6 de 10</meter> 6 de 10.</p>
+      <details>
+        <summary>Como usar este site?</summary>
+        <p>Escolha uma área no menu, estude os conceitos e registre seu plano.</p>
+      </details>
+      <p>Bordão: <del>estude tudo na véspera</del> <ins>revise um pouco a cada semana</ins>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Estuda ENEM — material de apoio para seus estudos.</p>
+    <p>Site feito por: Davi Cavalcanti</p>
+  </footer>
+</body>
+</html>
